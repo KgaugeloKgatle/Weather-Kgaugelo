@@ -16,26 +16,28 @@
 </head>
 <body>
     <header>
-        <form class="search-form">
-            <input type="search" placeholder="Enter a city.." required  class="search-form-input">
+        <form class="search-form" id="search-form">
+            <input type="search" placeholder="Enter a city.." required id="search-form-input" class="search-form-input">
             <input type="submit" value="Search"  class="search-form-button" >
            
         </form>
     </header>
     <main>
         <div class="weather-app-data">
-            <h1 class="weather-app-city">Tzaneen</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-                Tuesdday 14:49 , scatterd clouds
+                <span id="time"></span>,
+                <span id="description"></span>
                 <br>
-                Humidity <strong>69% </strong>,wind : <strong> 3.20km/h</strong>
+                Humidity: <strong id="humidity"></strong>,wind : <strong id="wind-speed"> </strong>
             </p>
-            <div class="weather-app">
-                <div class="weather-app-icon">🌤️</div>
-                <div class="weather-app-temp">15</div>
+            <div class="weather-app-temparature-container">
+                <div id="icon"></div>
+                <div class="weather-app-temp" id="temp"></div>
                 <div class="weather-app-unit">°C</div>
-            </div>
+            </div >
         </div>
+        <div class="weather-forecast" id="forecast"></div>
     </main>
     <footer>
         This project was coded by 
